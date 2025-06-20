@@ -147,31 +147,25 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start  ,
                 children: [
-                  const FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      "All Scheduled",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 3
+                  const Text(
+                    "All Scheduled",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 3
                       ),
                     ),
-                  ),
                   const SizedBox(height: 5),
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      "for Today (${tasks.length})",
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 3
+                  Text(
+                    "for Today (${tasks.length})",
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 3
                       ),
                     ),
-                  ),
                 ],
               ),
         ),
@@ -189,9 +183,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    return MediaQuery(
-        data: MediaQuery.of(context).copyWith(textScaler: TextScaler.linear(MediaQuery.of(context).textScaler.scale(1.0).clamp(0.8, 1.3))),
-        child: Scaffold(
+    return Scaffold(
           backgroundColor: Colors.black,
           appBar: AppBar(
             backgroundColor: Colors.black,
@@ -314,7 +306,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               buildTaskList([]),
             ],
           ),
-        )
-    );
+        );
   }
 }

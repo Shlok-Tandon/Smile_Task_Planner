@@ -72,7 +72,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             decoration: const BoxDecoration(
               color: Colors.black,
               boxShadow: [
-                BoxShadow(color: Colors.black54, blurRadius: 10),
+                BoxShadow(color: Colors.purpleAccent, blurRadius: 10),
               ],
             ),
           ),

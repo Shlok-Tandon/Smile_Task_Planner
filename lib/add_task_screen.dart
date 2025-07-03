@@ -74,10 +74,6 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text("Add Task"),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => widget.onSave(),
-        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

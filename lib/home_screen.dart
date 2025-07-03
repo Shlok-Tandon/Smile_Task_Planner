@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
-
 import 'calendar_screen.dart';
 
 
@@ -59,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isFirst ? Colors.orange[700] : const Color(0xFF1E1E1E),
+        color: isFirst ? Colors.orange[700] : Colors.white12,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -294,7 +293,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               ],
               labelColor: Colors.black,
               unselectedLabelColor: Colors.white38,
-              indicatorColor: Colors.orange,
             ),
           ),
           body: TabBarView(
